@@ -4,12 +4,13 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Window;
 import qq.qiracle.qnews.fragment.ContentFragment;
 import qq.qiracle.qnews.fragment.LeftMenuFragment;
+
+
 
 public class MainActivity extends SlidingFragmentActivity {
 
@@ -25,7 +26,7 @@ public class MainActivity extends SlidingFragmentActivity {
 		setBehindContentView(R.layout.left_menu);// 设置侧边栏
 		SlidingMenu slidingMenu = getSlidingMenu();// 获取侧边栏对象
 		slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);// 设置全屏触摸
-		slidingMenu.setBehindOffset(200);// 设置预留屏幕的宽度
+		slidingMenu.setBehindWidthRes(R.dimen.slidingmenu_offset);
 
 		initFragment();
 	}

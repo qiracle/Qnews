@@ -44,7 +44,7 @@ public class LeftMenuFragment extends Basefragment {
 				mCurrentPos = position;
 				mAdapter.notifyDataSetChanged();
 
-				//setCurrentMenuDetailPager(position);
+				setCurrentMenuDetailPager(position);
 
 				toggleSlidingMenu();// 隐藏
 			}
