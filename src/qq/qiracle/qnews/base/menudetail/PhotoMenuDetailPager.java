@@ -28,6 +28,7 @@ import qq.qiracle.qnews.domain.PhotosData;
 import qq.qiracle.qnews.domain.PhotosData.PhotoInfo;
 import qq.qiracle.qnews.global.GlobalContants;
 import qq.qiracle.qnews.utils.CacheUtils;
+import qq.qiracle.qnews.utils.bitmap.MyBitmapUtils;
 
 /**
  * 菜单详情页-组图
@@ -71,7 +72,7 @@ public class PhotoMenuDetailPager extends BaseMenuDetailPager {
 				.getCache(GlobalContants.PHOTOS_URL, mActivity);
 
 		if (!TextUtils.isEmpty(cache)) {
-
+			parseData(cache);
 		}
 
 		getDataFromServer();
@@ -140,28 +141,33 @@ public class PhotoMenuDetailPager extends BaseMenuDetailPager {
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			ViewHolder holder;
+			View view = null;
 			if (convertView == null) {
-				convertView = View.inflate(mActivity, R.layout.list_photo_item,
+				view = View.inflate(mActivity, R.layout.list_photo_item,
 						null);
 
 				holder = new ViewHolder();
-				holder.tvTitle = (TextView) convertView
+				holder.tvTitle = (TextView) view
 						.findViewById(R.id.tv_title);
-				holder.ivPic = (ImageView) convertView
+				holder.ivPic = (ImageView) view
 						.findViewById(R.id.iv_pic);
 
-				convertView.setTag(holder);
+				view.setTag(holder);
 			} else {
-				holder = (ViewHolder) convertView.getTag();
+				view =convertView;
+				holder = (ViewHolder) view.getTag();
+				
 			}
 
 			PhotoInfo item = getItem(position);
 
 			holder.tvTitle.setText(item.title);
 
-			utils.display(holder.ivPic, item.listimage);
+			//utils.display(holder.ivPic, item.listimage);
+			MyBitmapUtils mUtils =new MyBitmapUtils();
+			mUtils.display(holder.ivPic, item.listimage);
 
-			return convertView;
+			return view;
 		}
 
 	}
