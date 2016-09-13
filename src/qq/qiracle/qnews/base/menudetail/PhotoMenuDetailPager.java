@@ -157,15 +157,23 @@ public class PhotoMenuDetailPager extends BaseMenuDetailPager {
 				view =convertView;
 				holder = (ViewHolder) view.getTag();
 				
+
+				
 			}
 
+			// 通过 tag 来防止图片错位
+			
+			
 			PhotoInfo item = getItem(position);
-
+			holder.ivPic.setTag(item.listimage);
 			holder.tvTitle.setText(item.title);
 
 			//utils.display(holder.ivPic, item.listimage);
 			MyBitmapUtils mUtils =new MyBitmapUtils();
-			mUtils.display(holder.ivPic, item.listimage);
+			if (holder.ivPic.getTag() != null && holder.ivPic.getTag().equals(item.listimage)) {
+				mUtils.display(holder.ivPic, item.listimage);
+			}
+		
 
 			return view;
 		}

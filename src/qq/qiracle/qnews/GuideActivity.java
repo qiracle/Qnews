@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import qq.qiracle.qnews.utils.DensityUtils;
 import qq.qiracle.qnews.utils.PrefUtils;
 
 public class GuideActivity extends Activity {
@@ -82,7 +83,7 @@ private void initViews() {
 		View point =new View(this);
 		point.setBackgroundResource(R.drawable.shape_point_gray);
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-				25, 25);
+				DensityUtils.dp2px(this, 10), DensityUtils.dp2px(this, 10));
 		if (i > 0) {
 			params.leftMargin = 10;// 设置圆点间隔
 		}
