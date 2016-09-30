@@ -8,12 +8,7 @@ import android.widget.TextView;
 
 import qq.qiracle.qnews.base.BaseMenuDetailPager;
 
-/**
- * 菜单详情页-互动
- * 
- * @author Kevin
- * 
- */
+
 public class InteractMenuDetailPager extends BaseMenuDetailPager {
 
 	public InteractMenuDetailPager(Activity activity) {

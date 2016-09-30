@@ -21,12 +21,7 @@ import qq.qiracle.qnews.domain.NewsData.NewsTabData;
 
 
 
-/**
- * 菜单详情页-新闻
- * 
- * @author Kevin
- * 
- */
+
 public class NewsMenuDetailPager extends BaseMenuDetailPager  implements
 OnPageChangeListener{
 

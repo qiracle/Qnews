@@ -7,21 +7,16 @@ import android.widget.TextView;
 
 import qq.qiracle.qnews.base.BasePager;
 
-/**
- * 政务
- * 
- * @author Kevin
- * 
- */
-public class GovAffairsPager extends BasePager {
 
-	public GovAffairsPager(Activity activity) {
+public class LiveServicePager extends BasePager {
+
+	public LiveServicePager(Activity activity) {
 		super(activity);
 	}
 
 	@Override
 	public void initData() {
-		System.out.println("初始化政务数据....");
+		System.out.println("初始化....");
 		
 		tvTitle.setText("生活服务");
 		setSlidingMenuEnable(true);// 打开侧边栏

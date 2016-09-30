@@ -6,8 +6,6 @@ import android.support.v4.util.LruCache;
 /**
  * 内存缓存
  * 
- * @author Kevin
- * 
  */
 public class MemoryCacheUtils {
 

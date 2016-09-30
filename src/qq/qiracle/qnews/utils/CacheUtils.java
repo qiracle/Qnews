@@ -5,8 +5,6 @@ import android.content.Context;
 /**
  * 缓存工具类
  * 
- * @author Kevin
- * 
  */
 public class CacheUtils {
 

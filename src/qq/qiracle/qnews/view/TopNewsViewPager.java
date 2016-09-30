@@ -8,8 +8,6 @@ import android.view.MotionEvent;
 /**
  * 头条新闻的Viewpager
  * 
- * @author Kevin
- * 
  */
 public class TopNewsViewPager extends ViewPager {
 

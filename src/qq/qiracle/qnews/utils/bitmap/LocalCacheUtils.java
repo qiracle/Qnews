@@ -33,7 +33,6 @@ public class LocalCacheUtils {
 			String fileName = MD5Encoder.encode(url);
 
 			File file = new File(CACHE_PATH, fileName);
-
 			File parentFile = file.getParentFile();
 			if (!parentFile.exists()) {// 如果文件夹不存在, 创建文件夹
 				parentFile.mkdirs();

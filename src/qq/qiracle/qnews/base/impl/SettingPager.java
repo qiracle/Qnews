@@ -8,12 +8,7 @@ import android.widget.TextView;
 
 import qq.qiracle.qnews.base.BasePager;
 
-/**
- * 设置页面
- * 
- * @author Kevin
- * 
- */
+
 public class SettingPager extends BasePager {
 
 	public SettingPager(Activity activity) {
@@ -22,7 +17,7 @@ public class SettingPager extends BasePager {
 
 	@Override
 	public void initData() {
-		System.out.println("初始化设置数据....");
+		System.out.println("初始化....");
 		
 		tvTitle.setText("设置");
 		btnMenu.setVisibility(View.GONE);// 隐藏菜单按钮

@@ -44,12 +44,7 @@ import qq.qiracle.qnews.utils.PrefUtils;
 import qq.qiracle.qnews.view.RefreshListView;
 import qq.qiracle.qnews.view.RefreshListView.OnRefreshListener;
 
-/**
- * 页签详情页
- * 
- * @author Kevin
- * 
- */
+
 public class TabDetailPager extends BaseMenuDetailPager implements
 OnPageChangeListener {
 

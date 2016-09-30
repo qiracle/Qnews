@@ -26,12 +26,7 @@ import qq.qiracle.qnews.fragment.LeftMenuFragment;
 import qq.qiracle.qnews.global.GlobalContants;
 import qq.qiracle.qnews.utils.CacheUtils;
 
-/**
- * 新闻中心
- * 
- * @author Kevin
- * 
- */
+
 public class NewsCenterPager extends BasePager {
 
 	private ArrayList<BaseMenuDetailPager> mPagers;// 4个菜单详情页的集合
@@ -43,7 +38,7 @@ public class NewsCenterPager extends BasePager {
 
 	@Override
 	public void initData() {
-		System.out.println("初始化新闻中心数据....");
+		System.out.println("初始化....");
 
 		tvTitle.setText("新闻");
 		setSlidingMenuEnable(true);// 打开侧边栏

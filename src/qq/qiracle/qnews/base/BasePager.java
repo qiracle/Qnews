@@ -11,12 +11,7 @@ import android.widget.TextView;
 import qq.qiracle.qnews.MainActivity;
 import qq.qiracle.qnews.R;
 
-/**
- * 主页下5个子页面的基类
- * 
- * @author Kevin
- * 
- */
+
 public class BasePager {
 
 	public Activity mActivity;

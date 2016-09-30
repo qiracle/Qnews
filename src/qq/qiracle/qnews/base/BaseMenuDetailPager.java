@@ -3,12 +3,7 @@ package qq.qiracle.qnews.base;
 import android.app.Activity;
 import android.view.View;
 
-/**
- * 菜单详情页基类
- * 
- * @author Kevin
- * 
- */
+
 public abstract class BaseMenuDetailPager {
 
 	public Activity mActivity;

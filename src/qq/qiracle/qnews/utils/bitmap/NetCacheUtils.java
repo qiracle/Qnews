@@ -32,7 +32,6 @@ public class NetCacheUtils {
 	 * 
 	 * 第一个泛型: 参数类型 第二个泛型: 更新进度的泛型, 第三个泛型是onPostExecute的返回结果
 	 * 
-	 * @author Kevin
 	 * 
 	 */
 	class BitmapTask extends AsyncTask<Object, Void, Bitmap> {

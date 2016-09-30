@@ -3,8 +3,6 @@ package qq.qiracle.qnews;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
-import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
@@ -28,6 +26,7 @@ public class SplashActivity extends Activity {
 	}
 	private void startAnim() {
 		AnimationSet set = new AnimationSet(false);
+		//旋转
 		RotateAnimation rotate = new RotateAnimation(0,360,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
 		rotate.setDuration(1000);
 		rotate.setFillAfter(true);

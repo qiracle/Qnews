@@ -14,11 +14,11 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import qq.qiracle.qnews.R;
 import qq.qiracle.qnews.base.BasePager;
-import qq.qiracle.qnews.base.impl.GovAffairsPager;
+import qq.qiracle.qnews.base.impl.LiveServicePager;
 import qq.qiracle.qnews.base.impl.HomePager;
 import qq.qiracle.qnews.base.impl.NewsCenterPager;
 import qq.qiracle.qnews.base.impl.SettingPager;
-import qq.qiracle.qnews.base.impl.SmartServicePager;
+import qq.qiracle.qnews.base.impl.HappyTimePager;
 
 public class ContentFragment extends Basefragment{
 	@ViewInject(R.id.rg_group)
@@ -40,8 +40,8 @@ public class ContentFragment extends Basefragment{
 		mPagerList = new ArrayList<BasePager>();
 		mPagerList.add(new HomePager(mActivity));
 		mPagerList.add(new NewsCenterPager(mActivity));
-		mPagerList.add(new SmartServicePager(mActivity));
-		mPagerList.add(new GovAffairsPager(mActivity));
+		mPagerList.add(new HappyTimePager(mActivity));
+		mPagerList.add(new LiveServicePager(mActivity));
 		mPagerList.add(new SettingPager(mActivity));
 		
 		mViewPager.setAdapter(new ContentAdapter());

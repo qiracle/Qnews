@@ -5,7 +5,6 @@ import java.util.ArrayList;
 /**
  * 页签详情页数据
  * 
- * @author Kevin
  * 
  */
 public class TabData {

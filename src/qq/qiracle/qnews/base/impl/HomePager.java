@@ -9,12 +9,7 @@ import qq.qiracle.qnews.base.BasePager;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
-/**
- * 首页实现
- * 
- * @author Kevin
- * 
- */
+
 public class HomePager extends BasePager {
 
 	public HomePager(Activity activity) {

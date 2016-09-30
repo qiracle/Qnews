@@ -5,9 +5,6 @@ import android.content.SharedPreferences;
 
 /**
  * SharePreference封装
- * 
- * @author Kevin
- * 
  */
 public class PrefUtils {
 

@@ -30,10 +30,6 @@ import qq.qiracle.qnews.global.GlobalContants;
 import qq.qiracle.qnews.utils.CacheUtils;
 import qq.qiracle.qnews.utils.bitmap.MyBitmapUtils;
 
-/**
- * 菜单详情页-组图
- * @author Kevin
- */
 public class PhotoMenuDetailPager extends BaseMenuDetailPager {
 	private ListView lvPhoto;
 	private GridView gvPhoto;

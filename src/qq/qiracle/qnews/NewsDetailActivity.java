@@ -22,7 +22,6 @@ import cn.sharesdk.onekeyshare.OnekeyShareTheme;
 /**
  * 新闻详情页
  * 
- * @author Kevin
  * 
  */
 public class NewsDetailActivity extends Activity implements OnClickListener {
