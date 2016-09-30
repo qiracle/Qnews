@@ -8,7 +8,6 @@ import android.view.MotionEvent;
 /**
  * 11个子页签水平滑动的Viewpager, 暂时不用
  * 
- * @author Kevin
  * 
  */
 public class HorizontalViewPager extends ViewPager {

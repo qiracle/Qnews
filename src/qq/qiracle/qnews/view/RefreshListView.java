@@ -21,8 +21,6 @@ import qq.qiracle.qnews.R;
 /**
  * 下拉刷新的ListView
  * 
- * @author Kevin
- * 
  */
 public class RefreshListView extends ListView
 		implements OnScrollListener, android.widget.AdapterView.OnItemClickListener {
